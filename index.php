@@ -47,11 +47,19 @@
             }
         }
   */
-  ?>      
+  ?> <?php
+            $title = get_the_title();
+            $sigle =substr($title, 0, 7);
+            $nomCours = substr($title,8, -6);
+            $dureeCours =substr($title, -6);  
+  ?>   
   <?php if (have_posts()):
         while(have_posts()): the_post(); ?>
         <div class="carte">
             <h4><?php the_title(); ?></h4>
+            <h5><?php  echo $sigle ?></h5>
+            <h4><?php echo $nomCours ?></h4>
+            <h3><?php echo $dureeCours?></h3>
             <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
         </div>
        <?php endwhile; ?>
