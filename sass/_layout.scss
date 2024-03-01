@@ -74,3 +74,12 @@ body {
     background-color: var(--_couleur-arriere);
     color : var(--_couleur);
 }
+
+@media screen and (max-width: 768px) {
+	.global > header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

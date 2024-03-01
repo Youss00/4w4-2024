@@ -291,6 +291,14 @@ body {
   color: var(--_couleur);
 }
 
+@media screen and (max-width: 768px) {
+  .global > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .vague {
   position: absolute;
   bottom: -2px;
