@@ -27,9 +27,23 @@ h3 {
 
 }
 
-h4 {}
-h5 {}
-h6 {}
+h4 {
+	font-size: clamp(1rem, -1.292rem + 7.333vw, 2rem);
+	font-weight: bold;
+	
+}
+
+h5 {
+	font-size: clamp(1rem, -1.292rem + 7.333vw, 1.5rem);
+font-weight: bold;
+	
+}
+
+h6 {
+	font-size: clamp(1rem, -1.292rem + 7.333vw, 1rem);
+	font-weight: bold;
+	
+}
 
 p {
     font-size: clamp(1rem, 0.4792rem + 1.6667vw, 1.625rem);
@@ -37,7 +51,10 @@ p {
     padding : 2rem 0;
 }
 
-hr {}
+hr {
+    font-size: clamp(1rem, -1.292rem + 7.333vw, 1rem);
+	font-weight: bold;
+}
 
 blockquote {
     background-color: var(--_couleur-arriere-blockquote);
