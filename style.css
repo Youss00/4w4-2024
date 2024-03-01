@@ -348,8 +348,6 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-image: url("images/ocean.jpg");
-  background-repeat: no-repeat;
   background-position: 50% 90%;
   background-size: content;
   text-align: center;
@@ -400,6 +398,10 @@ body {
 
 .recherche__input {
   display: block;
+}
+
+.recherche__button {
+  background-color: red;
 }
 
 .section__cours {
