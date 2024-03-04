@@ -20,10 +20,10 @@ Ce thème a été développé dans le cadre du cours 4W4
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  --nb-element: 3;
+  --nb-element: 10;
   --increment-angle: calc(360 / var(--nb-element));
   /* 360/5 = 72) */
-  --angle-initial: 227;
+  --angle-initial: 10;
   /* couleur arrière plan */
   --s-couleur-arriere: 100%;
   --l-couleur-arriere: 50%;
@@ -183,7 +183,8 @@ button.entete__button {
   background-image: linear-gradient(163deg, var(--_couleur-bouton-1), var(--_couleur-bouton-2));
   font-size: clamp(1.5rem, 0.1458rem + 4.3333vw, 3.125rem);
   border-radius: 10px;
-  border: 2ps solid #555;
+  border: 15px double #ab0000;
+  color: #9d2a00;
   padding: 16px 24px;
   margin: 20px;
   transition: transform 0.1s;
@@ -250,13 +251,13 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 1500px;
+  text-align: center;
   padding: 10rem 1rem;
 }
 
 .global > header {
   flex: 0 1 1500px;
-  padding: 3rem 0 0 0;
   min-height: 50vh;
   position: relative;
 }
@@ -363,10 +364,6 @@ body {
 @media screen and (min-width: 1100px) {
   .entete__header__texte {
     background-position: 100% 90%;
-    align-items: flex-start;
-  }
-  .entete__header__button {
-    text-align: left;
   }
 }
 .footer__section {
@@ -398,6 +395,8 @@ body {
 
 .recherche__input {
   display: block;
+  color: red;
+  background-color: beige;
 }
 
 .recherche__button {
@@ -408,6 +407,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
+  top: 5rem;
 }
 
 .carte {

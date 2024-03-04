@@ -4,10 +4,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
 
---nb-element : 3; // triade 
+--nb-element : 10; // triade 
 --increment-angle : calc(360 / var(--nb-element));
 /* 360/5 = 72) */
---angle-initial : 227;
+--angle-initial : 10;
 /* couleur arrière plan */
 --s-couleur-arriere : 100%; // saturation
 --l-couleur-arriere : 50%;  // luminosité

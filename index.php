@@ -10,8 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -60,10 +59,10 @@
                         $titreCours = trim(substr($titre, 8, -5), $duree);
                 ?>
                         <div class="carte">
-                            <p><?php echo $sigle; ?></p>
+                            <h5><?php echo $sigle; ?></h5>
                             <h3><?php echo $titreCours; ?></h3>
-                            <p><?php echo $dureeCours; ?></p>
-                            <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
+                            <h5><?php echo $dureeCours; ?></h5>
+                            <h5><?php echo wp_trim_words(get_the_content(), 30); ?></h5>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
