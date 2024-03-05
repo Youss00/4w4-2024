@@ -1,0 +1,15 @@
+.menu-cours-container {
+    border: 1px solid #aaa;
+
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.menu-item {
+    display: inline;
+}
