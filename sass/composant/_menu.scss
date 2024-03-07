@@ -1,15 +1,75 @@
-.menu-cours-container {
-    border: 1px solid #aaa;
+.menu-principal-container {
+    // border: 1px solid #aaa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
 
+    @media screen and (min-width: 700px) {
+        transform: translateX(-30%);
+        position: static;
+    }
 }
 
-.menu {
-    list-style-type: none;
+#menu-principal {
     display: flex;
-    gap: 1rem;
-    justify-content: space-around;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(178, 2, 32);
+    position: relative;
+    top: 3rem;
+    z-index: 1;
+
+
+    transition: transform 0.5s ease-in-out;
+
+    @media screen and (min-width: 700px) {
+
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        top: 0;
+
+    }
+
 }
 
 .menu-item {
-    display: inline;
+    display: flex;
+    padding: 2rem;
+    position: relative;
+    left: 1rem;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2 rem;
+}
+
+.menu-item a:hover {
+    color: rgb(255, 137, 124);
+
+}
+
+#chk_burger {
+    display: none;
+}
+
+#burger {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+}
+
+#chk_burger:checked~.menu-principal-container {
+    transform: translateX(-30%);
 }

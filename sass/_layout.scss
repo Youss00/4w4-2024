@@ -19,13 +19,16 @@ body {
 .global {
     display: flex;
     justify-content: center;
-    min-height: 30vh;
+    // min-height: 30vh;
+    background-color: rgb(178, 2, 32);
 }
 
 .global>section,
-.global>header,
-.global>footer,
-.global>.entete__menu {
+// .global>header,
+.global>footer // .global>.entete__menu 
+
+
+    {
     // flex : grow shrink basis
     flex: 0 1 1500px;
     // border : 1px solid #aaa;
@@ -34,10 +37,12 @@ body {
     padding: 10rem 1rem;
 }
 
-.global>header {
+.entete__menu,
+.entete__header {
     flex: 0 1 1500px;
-    min-height: 50vh;
+    // min-height: 50vh;
     position: relative;
+    padding: 1.5rem;
 
 }
 
@@ -50,7 +55,7 @@ body {
     //  background-repeat: no-repeat;
     color: var(--_couleur);
     position: relative;
-    min-height: 100vh;
+    // min-height: 100vh;
 
 }
 

@@ -13,8 +13,45 @@
 </head>
 
 <body>
+    <div id="menu" class="global">
+        <header class="entete__menu">
+            <label id="burger" for="chk_burger">
+                <svg id="burger" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" color="#000">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </label>
+            <input type="checkbox" name="" id="chk_burger">
+            <nav class="menu-principal-container">
+                <ul id="menu-principal" class="menu">
+                    <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32">
+                        <a href="http://localhost:8080/wp/wordpress/2020/10/07/582-6n3-stage-285h/">Stage</a>
+                    </li>
+                    <li id="menu-item-34"
+                        class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-34">
+                        <a href="http://localhost:8080/wp/wordpress/2020/10/07/582-5w5-projet-web-en-equipe-105h/"
+                            aria-current="page">Projet Web en équipe</a>
+                    </li>
+                    <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39">
+                        <a href="http://localhost:8080/wp/wordpress/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">582-4J4
+                            Création de jeu en équipe (105h)</a>
+                    </li>
+                    <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36">
+                        <a href="#accueil">Accueil</a>
+                    </li>
+                    <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37">
+                        <a href="#galerie">Galerie</a>
+                    </li>
+                    <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38">
+                        <a href="#evenement">Événement</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <div id="entete" class="global">
-        <header class="entete__header">
+        <section class="entete__header">
             <!-- facebook -->
 
             <div class="entete__header__texte">
@@ -24,13 +61,13 @@
             </div>
             <div class="entete__header__button"><button class="entete__button">Événements</button></div>
 
-        </header>
+        </section>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
-                <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    style="fill:var(--couleur-arriere-accueil)"></path>
+                <path class="remplissage"
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z">
+                </path>
             </svg>
         </div>
     </div>
@@ -39,89 +76,12 @@
             <h2>Accueil (h2)</h2>
             <div class="section__cours">
                 <div class="carte">
-                    <h5>582-6N3</h5>
-                    <h4>Stage (</h4>
-                    <p>Le stage en entreprise complète la formation de l’étudiant en lui permettant d'intégrer et de
-                        mettre en application ses différents acquis dans le milieu professionnel. L’étudiant joint une
-                        véritable équipe…</p>
-                    <h5>285h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-3M5</h5>
-                    <h4>Imagerie 3D (</h4>
-                    <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie de synthèse. Il est amené à maîtriser
-                        les outils et les fonctionnalités de base d’un logiciel de production 3D pour…</p>
-                    <h5>75h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-2J2</h5>
-                    <h4>Création de jeu 2D (</h4>
-                    <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie aux concepts de base
-                        d'un moteur de jeu. Le cours permet d'approfondir la maîtrise de la structure d'affichage ainsi
-                        que…</p>
-                    <h5>60h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-2W2</h5>
-                    <h4>Animation et interactivité Web (</h4>
-                    <p>Ce cours permet à l'étudiant d'acquérir les compétences de base requises pour programmer
-                        l'interactivité de l'interface-utilisateur d'une application multimédia en ligne. Les notions
-                        abordées dans les cours « 582-1W1 Mise…</p>
-                    <h5>75h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-2M4</h5>
-                    <h4>Conception graphique et imagerie vectorielle (</h4>
-                    <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à la conception, à la
-                        communication graphique et au traitement des images fixes vectorielles. L'étudiant développe un
-                        concept créatif décliné en…</p>
-                    <h5>90h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-2M3</h5>
-                    <h4>Effets spéciaux et animation (</h4>
-                    <p>Ce cours permet d'approfondir la formation de l’étudiant en matière de traitement d’images en
-                        mouvement et de traitement sonore. L’étudiant poursuit son apprentissage des techniques de prise
-                        de vues avec…</p>
-                    <h5>60h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-1J1</h5>
-                    <h4>Animation et interactivité en jeu (</h4>
-                    <p>Ce cours est consacré aux concepts de base nécessaires à la création d’un jeu numérique. Le cours
-                        porte, d’une part, sur l’animation des médias : l’étudiant y apprend à importer…</p>
-                    <h5>75h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-1W1</h5>
-                    <h4>Mise en page Web (</h4>
-                    <p>Dans ce cours, l'étudiant apprend les techniques de mise en page Web en utilisant les langages de
-                        balisage et de feuilles de styles. L'étudiant apprend également à analyser et schématiser…</p>
-                    <h5>75h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-1M2</h5>
-                    <h4>Conception graphique et imagerie matricielle (</h4>
-                    <p>Ce cours initie l'étudiant aux rudiments de la conception et de la communication graphique ainsi
-                        qu'au traitement des images fixes matricielles. On y aborde les notions de base sur le…</p>
-                    <h5>90h</h5>
-
-                </div>
-                <div class="carte">
-                    <h5>582-1M1</h5>
-                    <h4>Création vidéo (</h4>
-                    <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au traitement des images en
-                        mouvement, au traitement du son ainsi qu'aux bases de la scénarisation linéaire. L’étudiant
-                        apprend à utiliser…</p>
-                    <h5>75h</h5>
+                    <h5>582-5W5</h5>
+                    <h4>Projet Web en équipe (</h4>
+                    <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce cours, qui s'appuie sur
+                        une pédagogie par projets, l’étudiant participe à la réalisation d’un produit multimédia en
+                        ligne pour un…</p>
+                    <h5>105h</h5>
 
                 </div>
             </div>
@@ -154,9 +114,9 @@
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
-                <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    style="fill:var(--couleur-arriere-footer)"></path>
+                <path class="remplissage"
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z">
+                </path>
             </svg>
         </div>
     </div>
