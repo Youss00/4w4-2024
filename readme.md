@@ -1,29 +1,26 @@
-# Labo #3
-## Création d'un site WP.
-- Adaptation du thème de exercice #1
-- Création du modèle index.php
-- Création de la branche labo3
-- minimum 3 commits
-- Un Readme.md qui contiendra:
-    - Le nom de l'auteur
-    - L'objectif du labo3
-    - Les réalisations
-    - Un lien vers la github-page
-- Décomposé le titre de chaque cours:
-    - sigle du cours ex: 582-4W4
-    - le titre du cours  ex: Conception d'interface et développement Web
-    - la durée du cours : 90h
+# Labo #4
 
-- Garder les 30 premiers mots de la description du cours.
+## Création d'un menu
+- Ajouter un menu permettant d'accéder
+ - À 5 différents cours
+ - À chaque section de la page
+- Formatage du menu avec SCSS. Adaptation en desktop et mobile et affichage avec un burger checkbox
 
-### La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
-- La liste devra s'adapter aux différentes largeurs de fenêtre en mobile une seule colonne.
-- Chacune des cartes de cours sera formatés en en utilisant les flex box
+### Création d'un header.php
+- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules de base
 
-### Barème de correction
-- Organistion du code, 3 commits minimum (1 point)
-- Résultat sous forme de github page avec index.htm (.5 point)
-- Design global de la page (.5 point)
+### Création d'un « template-part » (gabarit)
+- Créer un gabarit pour les vagues en php
+
+## Barème de correction
+- Intégration de chacun des éléments précédents de façon structuré (1 point)
+- Création d'une github-page à partir de index.htm
+- Création du readme.md avec :
+ - Le nom de l'auteur
+ - Un résumé des étapes du labo-4
+ - Un lien vers votre github-page
+ - Production de 5 commits
+- Design général de la page (1 point)
 
 ### page github  
 https://youss00.github.io/4w4-2024/

@@ -3,7 +3,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
 
-    --nb-element: 10; // triade 
+    --nb-element: 12; // triade 
     --increment-angle: calc(360 / var(--nb-element));
     /* 360/5 = 72) */
     --angle-initial: 10;

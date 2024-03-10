@@ -20,7 +20,7 @@ Ce thème a été développé dans le cadre du cours 4W4
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 :root {
-  --nb-element: 10;
+  --nb-element: 12;
   --increment-angle: calc(360 / var(--nb-element));
   /* 360/5 = 72) */
   --angle-initial: 10;
@@ -454,13 +454,24 @@ body {
 .menu-principal-container {
   position: absolute;
   top: 0;
-  left: 0;
   transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container {
-    transform: translateX(-30%);
+    transform: translateX(0);
     position: static;
+    left: 0;
+  }
+}
+
+#chk_burger:checked ~ .menu-principal-container {
+  transform: translateX(100%);
+}
+@media screen and (min-width: 700px) {
+  #chk_burger:checked ~ .menu-principal-container {
+    transform: translateX(0);
   }
 }
 
@@ -474,7 +485,6 @@ body {
   position: relative;
   top: 3rem;
   z-index: 1;
-  transition: transform 0.5s ease-in-out;
 }
 @media screen and (min-width: 700px) {
   #menu-principal {
@@ -496,29 +506,26 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bolder;
-  font-size: 1.2 rem;
+  font-size: 1.2rem;
 }
 
 .menu-item a:hover {
   color: rgb(255, 137, 124);
 }
 
-#chk_burger {
-  display: none;
-}
-
 #burger {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
 }
-@media screen and (min-width: 700px) {
+@media (min-width: 768px) {
   #burger {
     display: none;
   }
 }
 
-#chk_burger:checked ~ .menu-principal-container {
-  transform: translateX(-30%);
+#chk_burger {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
