@@ -1,28 +1,15 @@
-# Labo #4
+# TP1- Club de voyage
+### Objectifs:
+Créer un site web pour un club de voyage qui permettra de mettre en valeur les différenctes destination de voyage
 
-## Création d'un menu
-- Ajouter un menu permettant d'accéder
- - À 5 différents cours
- - À chaque section de la page
-- Formatage du menu avec SCSS. Adaptation en desktop et mobile et affichage avec un burger checkbox
+### Auteur:
+### Groupe:
+### Description du projet:
+### Liens URL:
 
-### Création d'un header.php
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules de base
+-Lien vers le serveur distant whc.ca
+-Lien bers la Github-page de la page d'accueil :
+ https://youss00.github.io/4w4-2024/
 
-### Création d'un « template-part » (gabarit)
-- Créer un gabarit pour les vagues en php
-
-## Barème de correction
-- Intégration de chacun des éléments précédents de façon structuré (1 point)
-- Création d'une github-page à partir de index.htm
-- Création du readme.md avec :
- - Le nom de l'auteur
- - Un résumé des étapes du labo-4
- - Un lien vers votre github-page
- - Production de 5 commits
-- Design général de la page (1 point)
-
-### page github  
-https://youss00.github.io/4w4-2024/
 
 
