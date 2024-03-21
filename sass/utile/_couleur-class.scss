@@ -17,6 +17,7 @@ $couleurs in $defaut {
     }
 }
 
+// definir la regle de style a partir d une couleur de tecte $clr et une ou plusieur en background  $bck.
 @mixin couleur-agencement($clr, $bck) {
     color: $clr;
 
@@ -29,6 +30,7 @@ $couleurs in $defaut {
     }
 }
 
+// creation 
 @each $valeur,
 $clr in $agencement-couleur {
     .clr-agencement-#{$valeur} {
