@@ -2,7 +2,7 @@
     // border: 1px solid #aaa;
     position: absolute;
     top: 0;
-
+    right: 0;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
     z-index: 1;
@@ -30,9 +30,9 @@
     list-style-type: none;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(178, 2, 32);
+    // background-color: rgb(6 13 30);
     position: relative;
-    top: 3rem;
+    top: 8rem;
     z-index: 1;
     overflow: hidden;
 
@@ -65,9 +65,10 @@
 #burger {
     display: block;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     z-index: 2;
+    color: white;
 
     @media (min-width: 768px) {
         display: none;

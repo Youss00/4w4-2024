@@ -18,6 +18,13 @@
 
 .carte * {
     text-align: center;
+
+}
+
+.post-categories {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .carte p {

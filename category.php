@@ -1,5 +1,4 @@
 <?php get_header() ?>
-<h1>category </h1>
 
 <div id="accueil" class="global">
     <section class="accueil__section">
