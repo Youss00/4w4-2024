@@ -9,15 +9,40 @@
             <h2 class="bgc-text"><?php echo get_bloginfo('description') ?></h2>
             <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
         </div>
-        <div class="entete__header__button"><button class="entete__button">Événements</button></div>
+        <div class="entete__header__button"><button class="entete__button">Découverte</button></div>
 
     </section>
     <?php get_template_part("gabarit/vagues") ?>
 </div>
 <div id="accueil" class="global">
     <section class="accueil__section">
-        <h2>Accueil (h2)</h2>
+        <h2>Accueil</h2>
         <div class="section__cours">
+            <?php
+            $categories = get_categories();
+            foreach ($categories as $categorie) : ?>
+                <div class="carte">
+                    <h4><?php echo $categorie->name; ?></h3>
+                        <p><?= wp_trim_words($categorie->description, 10, "..."); ?></p>
+                        <p>Nombres d'article: <?= $categorie->count; ?></p>
+                        <a href="<?= get_category_link($categorie->term_id); ?>">Voir la suite de catégorie</a>
+                </div>
+            <?php endforeach; ?>
+
+        </div>
+    </section>
+</div>
+<div id="galerie" class="global diagonal">
+    <section class="galerie__section">
+        <h2>Galerie (h2)</h2>
+        <p>Lorem ipsum dolor sit amet,<a href="#">Lorem, ipsum.</a> consectetur adipisicing elit. Minima <a href="#">Lorem, ipsum.</a> velit qui unde odit quae, magni labore maiores facilis obcaecati dolore, ullam facere. Ducimus veniam reprehenderit, temporibus ab at possimus fugit?</p>
+        <blockquote>Galerie ipsum, dolor sit amet consectetur adipisicing elit. Accusantium a, repellat alias qui ut in ratione optio quia quae minus repudiandae ducimus aliquid aperiam unde atque tempore non. Non, magnam.</blockquote>
+    </section>
+</div>
+<div id="evenement" class="global">
+    <section class="evenement__section">
+        <h2>Catégorie</h2>
+        <div class="categorie__cours">
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
@@ -33,23 +58,8 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-
-
-
-</div>
-<div id="galerie" class="global diagonal">
-    <section class="galerie__section">
-        <h2>Galerie (h2)</h2>
-        <p>Lorem ipsum dolor sit amet,<a href="#">Lorem, ipsum.</a> consectetur adipisicing elit. Minima <a href="#">Lorem, ipsum.</a> velit qui unde odit quae, magni labore maiores facilis obcaecati dolore, ullam facere. Ducimus veniam reprehenderit, temporibus ab at possimus fugit?</p>
-        <blockquote>Galerie ipsum, dolor sit amet consectetur adipisicing elit. Accusantium a, repellat alias qui ut in ratione optio quia quae minus repudiandae ducimus aliquid aperiam unde atque tempore non. Non, magnam.</blockquote>
     </section>
-</div>
-<div id="evenement" class="global">
-    <section class="evenement__section">
-        <h2>Événement</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Lorem, ipsum.</a> Minima velit qui unde odit quae, <a href="#">Lorem, ipsum.</a> magni labore maiores facilis obcaecati dolore, ullam facere. Ducimus veniam reprehenderit, temporibus ab at possimus fugit?</p>
-        <blockquote>Événement ipsum, dolor sit amet consectetur adipisicing elit. Accusantium a, repellat alias qui ut in ratione optio quia quae minus repudiandae ducimus aliquid aperiam unde atque tempore non. Non, magnam.</blockquote>
-    </section>
+
     <?php get_template_part("gabarit/vagues") ?>
 </div>
 

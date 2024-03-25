@@ -5,6 +5,11 @@
 
 }
 
+::selection {
+    background-color: rgba(255, 255, 255, 0.514);
+    color: rgb(255, 112, 112);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +18,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: "prompt", Arial, Helvetica, sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
 .global {
@@ -34,7 +39,7 @@ body {
     // border : 1px solid #aaa;
     text-align: center;
     // background-color : rgba(#000, .05 );
-    padding: 10rem 1rem;
+    padding: 10rem 10rem;
 }
 
 
@@ -71,9 +76,7 @@ body {
     background-color: var(--couleur-arriere-accueil);
     color: var(--_couleur);
     z-index: 1;
-    background: linear-gradient(180deg,
-            var(--couleur-arriere-accueil) 50%,
-            var(--couleur-arriere-evenement) 50%);
+
 }
 
 #evenement {

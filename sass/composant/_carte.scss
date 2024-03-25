@@ -6,14 +6,30 @@
     top: 5rem;
 }
 
+.categorie__cours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    top: 5rem;
+}
+
 .carte {
     border: 1px solid black;
-    padding: 1rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 0 23%;
-    background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
+    flex: 1 0 25%;
+    background-color: hsl(237.89deg 100% 11.18%);
+    border: 10px double white;
+    border-radius: 25px;
+}
+
+.carte:hover {
+    background-color: hsl(214, 77%, 24%);
+    border: 12px double rgb(127, 240, 255);
+
 }
 
 .carte * {

@@ -28,35 +28,35 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
 definition des variable de couleurs pour la palette de couleurs*/
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(190, 85%, 69%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(190, 85%, 69%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(200, 80%, 39%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(200, 80%, 39%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(194, 100%, 26%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(194, 100%, 26%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(238, 100%, 11%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(238, 100%, 11%);
 }
 
 .clr-secondaire-100 {
@@ -92,11 +92,11 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 .clr-ternaire-100 {
-  color: hsl(10, 100%, 85%);
+  color: hsl(0, 100%, 72%);
 }
 
 .bck-ternaire-100 {
-  background-color: hsl(10, 100%, 85%);
+  background-color: hsl(0, 100%, 72%);
 }
 
 .clr-ternaire-200 {
@@ -156,8 +156,8 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+  color: hsl(238, 100%, 11%);
+  background-image: linear-gradient(90deg, hsl(238, 100%, 11%), hsl(200, 80%, 39%));
 }
 
 .clr-agencement-secondaire {
@@ -167,7 +167,7 @@ definition des variable de couleurs pour la palette de couleurs*/
 
 .clr-agencement-ternaire {
   color: hsl(10, 100%, 15%);
-  background-color: hsl(10, 100%, 85%);
+  background-color: hsl(0, 100%, 72%);
 }
 
 .clr-agencement-vert {
@@ -176,7 +176,7 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 :root {
-  --nb-element: 1;
+  --nb-element: 2;
   --increment-angle: calc(360 / var(--nb-element));
   /* 360/5 = 72) */
   --angle-initial: 10;
@@ -189,17 +189,17 @@ definition des variable de couleurs pour la palette de couleurs*/
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
-  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --couleur-arriere-accueil: hsl(199.75deg 80.1% 39.41%);
   --couleur-arriere-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
   --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 70%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 }
 
 #entete {
-  --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
-  --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
-  --_couleur-ombrage: hsl(var(--hu1), var(--s-couleur-arriere), 50%);
-  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --_couleur-arriere: hsl(238.02deg 100% 11.1%);
+  --_couleur: hsl(189.94deg 86.67% 61.76%);
+  --_couleur-ombrage: hsl(203.33deg 100% 33.24%);
+  --_couleur-arriere-vague: hsl(199.75deg 80.1% 39.41%);
   /* Couleur du bouton */
   --_couleur-bouton-1-active: hsl(var(--hu2), var(--s-couleur-arriere), 35%);
   --_couleur-bouton-2-active: hsl(var(--hu2), var(--s-couleur-arriere), 45%);
@@ -212,8 +212,8 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 #accueil {
-  --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
-  --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
+  --_couleur-arriere: hsl(199.9deg 80.41% 39.36%);
+  --_couleur: hsl(189.96deg 85.07% 69.34%);
   /* Couleur des liens */
   --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
   --_couleur-lien-hover: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
@@ -226,22 +226,22 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 #galerie {
-  --_couleur-arriere: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
-  --_couleur: hsl(var(--hu2), var(--s-couleur-arriere), 35%);
+  --_couleur-arriere: hsl(200, 78%, 24%);
+  --_couleur: hsl(190, 100%, 25%);
   /* Couleur des liens */
   --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
   --_couleur-lien-hover: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
   --_couleur-lien-visited: hsl(var(--hu3), var(--s-couleur-arriere), 50%);
   /* Couleurs blockquote */
-  --_couleur-arriere-blockquote: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
+  --_couleur-arriere-blockquote: hsl(189.64deg 78.33% 43.41%);
   --_couleur-blockquote: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
-  --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --_couleur-bordure: hsl(189, 97%, 13%);
   --_couleur-blockquote-first-letter: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
 }
 
 #evenement {
-  --_couleur-arriere: hsl(var(--hu3), var(--s-couleur-arriere), 70%);
-  --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+  --_couleur-arriere: hsl(199.75deg 80.1% 39.41%);
+  --_couleur: hsl(189.96deg 85.07% 69.34%);
   /* Couleur des liens */
   --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
   --_couleur-lien-hover: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
@@ -251,12 +251,12 @@ definition des variable de couleurs pour la palette de couleurs*/
   --_couleur-blockquote: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
   --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
   --_couleur-blockquote-first-letter: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
-  --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
+  --_couleur-arriere-vague: hsl(200.29deg 82.93% 16.08%);
 }
 
 #footer {
-  --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
-  --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
+  --_couleur-arriere: hsl(200, 83%, 16%);
+  --_couleur: hsl(189.96deg 85.07% 69.34%);
   /* Couleur des liens */
   --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
   --_couleur-lien-hover: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
@@ -269,35 +269,35 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(190, 85%, 69%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(190, 85%, 69%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(200, 80%, 39%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(200, 80%, 39%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(194, 100%, 26%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(194, 100%, 26%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(238, 100%, 11%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(238, 100%, 11%);
 }
 
 .clr-secondaire-100 {
@@ -333,11 +333,11 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 .clr-ternaire-100 {
-  color: hsl(10, 100%, 85%);
+  color: hsl(0, 100%, 72%);
 }
 
 .bck-ternaire-100 {
-  background-color: hsl(10, 100%, 85%);
+  background-color: hsl(0, 100%, 72%);
 }
 
 .clr-ternaire-200 {
@@ -397,8 +397,8 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+  color: hsl(238, 100%, 11%);
+  background-image: linear-gradient(90deg, hsl(238, 100%, 11%), hsl(200, 80%, 39%));
 }
 
 .clr-agencement-secondaire {
@@ -408,7 +408,7 @@ definition des variable de couleurs pour la palette de couleurs*/
 
 .clr-agencement-ternaire {
   color: hsl(10, 100%, 15%);
-  background-color: hsl(10, 100%, 85%);
+  background-color: hsl(0, 100%, 72%);
 }
 
 .clr-agencement-vert {
@@ -427,46 +427,38 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 
 */
 h1 {
-  font-size: clamp(1.875rem, -1.25rem + 10vw, 5.625rem);
+  font-size: clamp(1.875rem, -1.25rem + 10vw, 4rem);
   text-shadow: 3px 5px 6px var(--_couleur-ombrage);
-  font-weight: bold;
   letter-spacing: -3px;
 }
 
 h2 {
-  font-size: clamp(1.5625rem, -0.2604rem + 5.8333vw, 3.75rem);
-  font-weight: bold;
+  font-size: clamp(1.5625rem, -0.2604rem + 5.8333vw, 3.3rem);
 }
 
 h3 {
-  font-size: clamp(1.4375rem, 0.0313rem + 4.5vw, 3.125rem);
-  font-weight: bold;
+  font-size: clamp(1.4375rem, 0.0313rem + 4.5vw, 2.5rem);
 }
 
 h4 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 2rem);
-  font-weight: bold;
 }
 
 h5 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 1.5rem);
-  font-weight: bold;
 }
 
 h6 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 1rem);
-  font-weight: bold;
 }
 
 p {
-  font-size: clamp(1rem, 0.4792rem + 1.6667vw, 1.625rem);
+  font-size: clamp(1rem, 0.4792rem + 1.6667vw, 1rem);
   line-height: 1.8rem;
-  padding: 2rem 0;
 }
 
 hr {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 1rem);
-  font-weight: bold;
 }
 
 blockquote {
@@ -489,8 +481,8 @@ button.entete__button {
   background-image: linear-gradient(163deg, var(--_couleur-bouton-1), var(--_couleur-bouton-2));
   font-size: clamp(1.5rem, 0.1458rem + 4.3333vw, 3.125rem);
   border-radius: 10px;
-  border: 15px double #ab0000;
-  color: #9d2a00;
+  border: 15px double #060d1e;
+  color: #060d1e;
   padding: 16px 24px;
   margin: 20px;
   transition: transform 0.1s;
@@ -537,6 +529,11 @@ a:hover, a:active {
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: rgba(255, 255, 255, 0.514);
+  color: rgb(255, 112, 112);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -545,7 +542,7 @@ a:hover, a:active {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "prompt", Arial, Helvetica, sans-serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .global {
@@ -558,7 +555,7 @@ body {
 .global > footer {
   flex: 0 1 1500px;
   text-align: center;
-  padding: 10rem 1rem;
+  padding: 10rem 10rem;
 }
 
 .entete__header {
@@ -582,7 +579,6 @@ body {
   background-color: var(--couleur-arriere-accueil);
   color: var(--_couleur);
   z-index: 1;
-  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-evenement) 50%);
 }
 
 #evenement {
@@ -649,14 +645,15 @@ body {
 
 .entete__header {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding-top: 3rem;
   gap: 3rem;
-  background-image: url("images/github.png");
+  background-image: url("images/maps.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 90% 30%;
 }
 
 .entete__header__texte {
@@ -670,11 +667,15 @@ body {
   background-position: 50% 90%;
   background-size: content;
   text-align: center;
-  gap: 2rem;
+  gap: 4rem;
+}
+@media screen and (min-width: 700px) {
+  .entete__header__texte {
+    align-items: flex-start;
+  }
 }
 
 .entete__header__button {
-  text-align: center;
   padding-bottom: 10rem;
   width: 100%;
 }
@@ -729,14 +730,29 @@ body {
   top: 5rem;
 }
 
+.categorie__cours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+  top: 5rem;
+}
+
 .carte {
   border: 1px solid black;
-  padding: 1rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1 0 23%;
-  background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
+  flex: 1 0 25%;
+  background-color: hsl(237.89, 100%, 11.18%);
+  border: 10px double white;
+  border-radius: 25px;
+}
+
+.carte:hover {
+  background-color: hsl(214, 77%, 24%);
+  border: 12px double rgb(127, 240, 255);
 }
 
 .carte * {

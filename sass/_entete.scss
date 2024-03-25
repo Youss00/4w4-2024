@@ -1,13 +1,14 @@
 .entete__header {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-top: 3rem;
     gap: 3rem;
-    background-image: url("images/github.png");
+    background-image: url("images/maps.png");
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 90% 30%;
 
 }
 
@@ -28,11 +29,15 @@
     // background-size:400px;
     background-size: content;
     text-align: center;
-    gap: 2rem;
+    gap: 4rem;
+
+    @media screen and (min-width: 700px) {
+        align-items: flex-start;
+    }
 }
 
 .entete__header__button {
-    text-align: center;
+
     padding-bottom: 10rem;
     width: 100%;
 }

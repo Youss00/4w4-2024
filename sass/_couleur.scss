@@ -5,19 +5,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 /*
 
 definition des variable de couleurs pour la palette de couleurs*/
-
-$--clr-bleu-pale : hsl(220, 100%, 85%);
-$--clr-bleu-leger : hsl(220, 100%, 60%);
-$--clr-bleu-moyen : hsl(220, 100%, 30%);
-$--clr-bleu-fonce : hsl(220, 100%, 15%);
-
+//pour le bleu : la couleur principal du site
+$--clr-bleu-pale: hsl(190, 85%, 69%);
+$--clr-bleu-clair : hsl(190, 97%, 50%);
+$--clr-bleu-leger : hsl(200, 80%, 39%);
+$--clr-bleu-moyen : hsl(194, 100%, 26%);
+$--clr-bleu-fonce : hsl(238, 100%, 11%);
+$--clr-bleu-tres-fonce : hsl(223, 67%, 7%);
+//pour le orange / rouge
 
 $--clr-orange-pale: hsl(40, 100%, 85%);
 $--clr-orange-leger : hsl(40, 100%, 50%);
 $--clr-orange-moyen : hsl(40, 100%, 30%);
 $--clr-orange-fonce : hsl(40, 100%, 15%);
 
-$--clr-rouge-pale: hsl(10, 100%, 85%);
+$--clr-rouge-pale: hsl(0, 100%, 72%);
 $--clr-rouge-leger : hsl(10, 100%, 50%);
 $--clr-rouge-moyen : hsl(10, 100%, 30%);
 $--clr-rouge-fonce : hsl(10, 100%, 15%);
@@ -90,7 +92,7 @@ $clr in $agencement-couleur {
 
 :root {
 
-    --nb-element: 1; // triade 
+    --nb-element: 2; // triade 
     --increment-angle: calc(360 / var(--nb-element));
     /* 360/5 = 72) */
     --angle-initial: 10;
@@ -105,7 +107,7 @@ $clr in $agencement-couleur {
     --hu2: calc(var(--hu1) + var(--increment-angle));
     --hu3: calc(var(--hu2) + var(--increment-angle));
 
-    --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+    --couleur-arriere-accueil: hsl(199.75deg 80.1% 39.41%);
     --couleur-arriere-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
     --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 70%);
     --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
@@ -114,10 +116,10 @@ $clr in $agencement-couleur {
 }
 
 #entete {
-    --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
-    --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
-    --_couleur-ombrage: hsl(var(--hu1), var(--s-couleur-arriere), 50%);
-    --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+    --_couleur-arriere: hsl(238.02deg 100% 11.1%);
+    --_couleur: hsl(189.94deg 86.67% 61.76%);
+    --_couleur-ombrage: hsl(203.33deg 100% 33.24%);
+    --_couleur-arriere-vague: hsl(199.75deg 80.1% 39.41%);
     /* Couleur du bouton */
     --_couleur-bouton-1-active: hsl(var(--hu2), var(--s-couleur-arriere), 35%);
     --_couleur-bouton-2-active: hsl(var(--hu2), var(--s-couleur-arriere), 45%);
@@ -132,8 +134,8 @@ $clr in $agencement-couleur {
 
 
 #accueil {
-    --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
-    --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 25%);
+    --_couleur-arriere: hsl(199.9deg 80.41% 39.36%);
+    --_couleur: hsl(189.96deg 85.07% 69.34%);
     /* Couleur des liens */
     --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
     --_couleur-lien-hover: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
@@ -148,8 +150,9 @@ $clr in $agencement-couleur {
 }
 
 #galerie {
-    --_couleur-arriere: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
-    --_couleur: hsl(var(--hu2), var(--s-couleur-arriere), 35%);
+    --_couleur-arriere: hsl(200, 78%, 24%);
+    --_couleur: hsl(190, 100%, 25%);
+
 
     /* Couleur des liens */
     --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
@@ -158,16 +161,16 @@ $clr in $agencement-couleur {
 
 
     /* Couleurs blockquote */
-    --_couleur-arriere-blockquote: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
+    --_couleur-arriere-blockquote: hsl(189.64deg 78.33% 43.41%);
     --_couleur-blockquote: hsl(var(--hu1), var(--s-couleur-arriere), 20%);
-    --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+    --_couleur-bordure: hsl(189, 97%, 13%);
     --_couleur-blockquote-first-letter: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
 
 }
 
 #evenement {
-    --_couleur-arriere: hsl(var(--hu3), var(--s-couleur-arriere), 70%);
-    --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+    --_couleur-arriere: hsl(199.75deg 80.1% 39.41%);
+    --_couleur: hsl(189.96deg 85.07% 69.34%);
 
     /* Couleur des liens */
     --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
@@ -181,15 +184,15 @@ $clr in $agencement-couleur {
     --_couleur-bordure: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
     --_couleur-blockquote-first-letter: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
 
-    --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
+    --_couleur-arriere-vague: hsl(200.29deg 82.93% 16.08%);
 }
 
 
 
 #footer {
 
-    --_couleur-arriere: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
-    --_couleur: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
+    --_couleur-arriere: hsl(200, 83%, 16%);
+    --_couleur: hsl(189.96deg 85.07% 69.34%);
 
     /* Couleur des liens */
     --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
