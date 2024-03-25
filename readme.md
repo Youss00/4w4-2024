@@ -1,5 +1,13 @@
-# Exercice 2 (5 points)
+# TP 1
 
+### Auteur: Youssra Seghier
+### Groupe: Groupe 2
+### Description du projet: TP sur un site de Voyage et faire découvrir au gens les destinations de rêves
+### Liens URL: https://youss00.github.io/4w4-2024/
+
+# Exercice 2 (5 points)
+-Lien vers le serveur distant whc.ca
+-Lien bers la Github-page de la page d'accueil :
 - Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
 
 - Amélioration de la page d'accueil (front-page.php) (1 point)
