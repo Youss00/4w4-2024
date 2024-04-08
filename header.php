@@ -13,6 +13,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Teko:wght@300..700&family=Vina+Sans&display=swap" rel="stylesheet">
  </head>
 
+ </div>
+
  <body>
      <div id="menu" class="global clr-agencement-primaire">
          <?php echo get_custom_logo() ?>
@@ -25,5 +27,9 @@
              </label>
              <input type="checkbox" name="" id="chk_burger">
              <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")) ?>
+             <div class="search-form">
+                 <?php get_search_form(); ?>
+             </div>
          </header>
+
      </div>
