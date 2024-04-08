@@ -10,7 +10,7 @@
                         <?= the_category();  ?>
                         <h3><?= get_the_title() ?></h3>
                         <p><?= wp_trim_words(get_the_content(), 50); ?></p>
-
+                        <br>
                         <button class="bouton-carte "><a href="<?php the_permalink(); ?>">Voir l'article -></a></button>
                     </div>
                 <?php endwhile; ?>
