@@ -26,7 +26,9 @@
                  </svg>
              </label>
              <input type="checkbox" name="" id="chk_burger">
+             <!-- prendre le footer de wordpress -->
              <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")) ?>
+             <!-- Prendre le search form pour le mettre dans le header -->
              <div class="search-form">
                  <?php get_search_form(); ?>
              </div>
