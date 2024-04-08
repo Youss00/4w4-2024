@@ -1,9 +1,11 @@
 <?php
 ?>
-
+<!--  permet de prendre le header  du fichier principal -->
 <?php get_header() ?>
+<!-- Page d accueil  -->
 <div id="accueil" class="global">
     <section class="accueil__section">
+        <!--  Titre et sous-titre de l erreur -->
         <h2>ERREUR 404</h2>
         <br>
         <br>
@@ -11,9 +13,8 @@
             <h3>La page que vous cherchez n'existe pas ou a été déplacée. Vous pouvez :</h3>
             <br>
             <ul>
+                <!-- retour a la page d accueil -->
                 <h4><a href="<?= get_home_url('/') ?>">Retourner à l'accueil</a></h4>
-
-
             </ul>
 
 
