@@ -17,18 +17,22 @@
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Accueil</h2>
-        <div class="section__cours">
+        <div class="categorie__cours">
             <?php
-            $categories = get_categories();
-            foreach ($categories as $categorie) : ?>
-                <div class="carte">
-                    <h4><?php echo $categorie->name; ?></h3>
-                        <p><?= wp_trim_words($categorie->description, 10, "..."); ?></p>
-                        <p>Nombres d'article: <?= $categorie->count; ?></p>
-                        <a href="<?= get_category_link($categorie->term_id); ?>">Voir la suite de catégorie</a>
-                </div>
-            <?php endforeach; ?>
+            if (have_posts()) :
+                while (have_posts()) : the_post();
+            ?>
+                    <div class="carte">
+                        <?php has_post_thumbnail('thumbnail') ?>
+                        <?php the_category() ?>
+                        <h4><?php the_title(); ?></h4>
+                        <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
+                        <p><a href="<?php get_permalink() ?>">La suite</a></p>
 
+
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </section>
 </div>
@@ -42,22 +46,20 @@
 <div id="evenement" class="global">
     <section class="evenement__section">
         <h2>Catégorie</h2>
-        <div class="categorie__cours">
+        <div class="section__cours">
             <?php
-            if (have_posts()) :
-                while (have_posts()) : the_post();
-            ?>
-                    <div class="carte">
-                        <?php the_category() ?>
-                        <h4><?php the_title(); ?></h4>
-                        <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
-                        <p><a href="<?php get_permalink() ?>">La suite</a></p>
+            $categories = get_categories();
+            foreach ($categories as $categorie) : ?>
+                <div class="carte">
+                    <h4><?php echo $categorie->name; ?></h3>
+                        <p><?= wp_trim_words($categorie->description, 10, "..."); ?></p>
+                        <p>Nombres d'article: <?= $categorie->count; ?></p>
+                        <a href="<?= get_category_link($categorie->term_id); ?>">Voir la suite de catégorie</a>
+                </div>
+            <?php endforeach; ?>
 
-
-                    </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
         </div>
+
     </section>
 
     <?php get_template_part("gabarit/vagues") ?>

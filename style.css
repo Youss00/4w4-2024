@@ -16,11 +16,6 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* Variables css                              */
 /* ////////////////////////////////////////// */
-.bgc-text {
-  background-color: rgba(255, 255, 255, 0.1137254902);
-  color: var(--_couleur);
-}
-
 /*
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
@@ -643,6 +638,13 @@ body {
   background-color: var(--couleur-arriere-galerie);
 }
 
+#entete {
+  background-image: url("images/sf.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 0;
+}
+
 .entete__header {
   display: flex;
   align-items: center;
@@ -651,9 +653,6 @@ body {
   align-items: center;
   padding-top: 3rem;
   gap: 3rem;
-  background-image: url("images/maps.png");
-  background-repeat: no-repeat;
-  background-position: 90% 30%;
 }
 
 .entete__header__texte {
@@ -662,12 +661,19 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-image: url("image/github-octocat-logo-png-transparent.png");
   background-repeat: no-repeat;
   background-position: 50% 90%;
   background-size: content;
   text-align: center;
   gap: 4rem;
+  background-position: 100% 90%;
+  background: rgba(0, 0, 0, 0.315);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  padding: 5rem;
 }
 @media screen and (min-width: 700px) {
   .entete__header__texte {

@@ -24,6 +24,6 @@
                  </svg>
              </label>
              <input type="checkbox" name="" id="chk_burger">
-             <?php wp_nav_menu(array("container" => "nav")) ?>
+             <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")) ?>
          </header>
      </div>
