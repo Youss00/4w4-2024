@@ -14,6 +14,7 @@
     </section>
     <?php get_template_part("gabarit/vagues") ?>
 </div>
+<!-- Pour les categories les plus populaires -->
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Accueil</h2>
@@ -43,6 +44,7 @@
         <blockquote>Galerie ipsum, dolor sit amet consectetur adipisicing elit. Accusantium a, repellat alias qui ut in ratione optio quia quae minus repudiandae ducimus aliquid aperiam unde atque tempore non. Non, magnam.</blockquote>
     </section>
 </div>
+<!-- Pour les categorie dans le menu -->
 <div id="evenement" class="global">
     <section class="evenement__section">
         <h2>Catégorie</h2>

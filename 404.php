@@ -16,8 +16,6 @@
                 <!-- retour a la page d accueil -->
                 <h4><a href="<?= get_home_url('/') ?>">Retourner à l'accueil</a></h4>
             </ul>
-
-
         </div>
 
 
