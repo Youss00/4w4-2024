@@ -540,6 +540,11 @@ body {
   font-family: "Fjalla One", sans-serif;
 }
 
+.bouton-carte {
+  border: none;
+  background-color: rgba(6, 13, 30, 0);
+}
+
 .global {
   display: flex;
   justify-content: center;
@@ -639,10 +644,17 @@ body {
 }
 
 #entete {
-  background-image: url("images/sf.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 0;
+}
+@media screen and (min-width: 700px) {
+  #entete {
+    background-image: url("images/sf.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 0;
+  }
 }
 
 .entete__header {
@@ -697,6 +709,10 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+}
+
+#menu-footer {
+  display: flex;
 }
 
 /* ////////////////////////////////////////// */

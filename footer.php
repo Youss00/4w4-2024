@@ -1,13 +1,8 @@
 <div id="footer" class="global">
     <footer class="footer__section">
-        <form class="recherche" action="">
-            <input class="recherche__input" type="search" name="" id="" placeholder="Recherche">
-            <button class="recherche__button">
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">
-                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-                </svg>
-            </button>
-        </form>
+        <div class="search-form">
+            <?php get_search_form(); ?>
+        </div>
         <div class="sociaux">
             <a href="#"><svg width="32px" height="32px" role="img" viewBox="0 0 24 24" fill="currentColor" color="#ffffff" xmlns="http://www.w3.org/2000/svg">
                     <title>Pinterest icon</title>
@@ -35,6 +30,7 @@
                 </svg></a>
         </div>
         <div class="liens">
+            <h4>Compagnies partenaires</h4>
             <?php wp_nav_menu(array("menu" => "footer", "container" => "nav")) ?>
         </div>
     </footer>
