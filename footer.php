@@ -31,6 +31,7 @@
         </div>
         <div class="liens">
             <h4>Compagnies partenaires</h4>
+            <!-- Prendre le menu dans le wordpress et en faire un menu footer -->
             <?php wp_nav_menu(array("menu" => "footer", "container" => "nav")) ?>
         </div>
     </footer>
