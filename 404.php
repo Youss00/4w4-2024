@@ -18,7 +18,7 @@
 
             <div class="image-erreur">
 
-                <!-- <img src="http://localhost:8080/wp/wordpress/wp-content/uploads/2024/04/GGSF.jpg"> -->
+                <img src="https://gftnth00.mywhc.ca/tim47/wp-content/uploads/2024/04/GGSF.jpg">
 
             </div>
         </div>
