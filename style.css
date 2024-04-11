@@ -561,6 +561,18 @@ body {
   padding: 2rem;
 }
 
+.categories-accueil {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .categories-accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
 .flexbox {
   background-image: url("../images/maxwellCat.gif");
 }
@@ -825,6 +837,7 @@ body {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
   z-index: 1;
+  display: flex;
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container {

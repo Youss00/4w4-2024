@@ -20,10 +20,13 @@
 
         <div class="search-accueil">
             <?php get_search_form(); ?>
+
+        </div>
+        <div class="categories-accueil">
+            <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")) ?>
         </div>
 
-
-
+    </section>
 
 </div>
 
