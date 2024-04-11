@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: tp2
+Theme Name: theme-gr2
 Theme URI: https://referenced.ca
 Author: Youssra Seghier
 Author URI: https://wordpress.org/
@@ -544,6 +544,25 @@ body {
   border: none;
   background-color: rgba(6, 13, 30, 0);
   color: rgb(96, 218, 255);
+}
+
+.bouton-retour {
+  padding: 2rem;
+  border: none;
+  background-color: rgba(6, 13, 30, 0);
+  background-color: rgb(6, 99, 128);
+  color: rgb(255, 255, 255);
+}
+
+.search-accueil {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.flexbox {
+  background-image: url("../images/maxwellCat.gif");
 }
 
 .global {

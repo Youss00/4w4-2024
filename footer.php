@@ -1,6 +1,6 @@
 <div id="footer" class="global">
     <footer class="footer__section">
-        <div class="search-form">
+        <div class="recherche">
             <?php get_search_form(); ?>
         </div>
         <div class="sociaux">
