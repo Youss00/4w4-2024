@@ -46,6 +46,19 @@
     }
 }
 
+#menu-principal-1 {
+
+    @media screen and (min-width: 700px) {
+        display: flex;
+        text-decoration: underline;
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
 .menu-item {
     display: flex;
     padding: 2rem;

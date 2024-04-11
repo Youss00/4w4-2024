@@ -547,11 +547,27 @@ body {
 }
 
 .bouton-retour {
-  padding: 2rem;
+  padding: 1rem;
   border: none;
+  font-size: 2rem;
+  border: 1rem double rgb(4, 5, 49);
   background-color: rgba(6, 13, 30, 0);
-  background-color: rgb(6, 99, 128);
-  color: rgb(255, 255, 255);
+  background-color: rgb(82, 215, 255);
+  color: rgb(18, 51, 95);
+}
+
+.erreur-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-erreur {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .image-erreur {
+    display: block;
+  }
 }
 
 .search-accueil {
@@ -574,7 +590,14 @@ body {
 }
 
 .flexbox {
-  background-image: url("../images/maxwellCat.gif");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 700px) {
+  .flexbox {
+    justify-content: flex-start;
+  }
 }
 
 .global {
@@ -871,6 +894,17 @@ body {
 @media screen and (min-width: 700px) {
   #menu-principal {
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #menu-principal-1 {
+    display: flex;
+    text-decoration: underline;
     justify-content: space-around;
     flex-wrap: wrap;
     top: 0;
