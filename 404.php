@@ -13,8 +13,8 @@
                 <br>
                 <h4>La page que vous cherchez n'existe pas ou a été déplacée. Vous pouvez :</h4>
                 <br>
+                <button class=" bouton-retour"> <a href="<?= get_home_url('/') ?>">Retourner à l'accueil</a></button>
             </div>
-            <button class=" bouton-retour"> <a href="<?= get_home_url('/') ?>">Retourner à l'accueil</a></button>
 
             <div class="image-erreur">
 

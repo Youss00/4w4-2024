@@ -76,11 +76,13 @@ body {
 
 .flexbox {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     @media screen and (min-width: 700px) {
         justify-content: flex-start;
+        align-items: baseline;
 
     }
 
