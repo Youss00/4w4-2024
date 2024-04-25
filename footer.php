@@ -34,6 +34,7 @@
             <!-- Prendre le menu dans le wordpress et en faire un menu footer -->
             <?php wp_nav_menu(array("menu" => "footer", "container" => "nav")) ?>
         </div>
+        <?php wp_footer(); ?>
     </footer>
 </div>
 </body>

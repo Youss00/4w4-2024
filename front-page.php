@@ -28,7 +28,7 @@
                         <?php the_category() ?>
                         <h4><?php the_title(); ?></h4>
                         <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
-                        <p><a href="<?php get_permalink() ?>">La suite</a></p>
+                        <p><a href="<?php echo get_permalink() ?>">La suite</a></p>
 
 
                     </div>
