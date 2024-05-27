@@ -10,6 +10,12 @@
                     <?php the_post_thumbnail('medium') ?>
                     <h2><?php the_title(); ?></h2>
                     <p><?php the_content(); ?></p>
+                    <div class="infos-ville">
+                        <p>Température minimim: <?php the_field('temperature_minimum') ?>°C</p>
+                        <p>Température maximim: <?php the_field('temperature_maximum') ?>°C</p>
+                        <p>Ville avoisinante: <?php the_field('ville_avoisinante') ?></p>
+                        <p>Humidité: <?php the_field('humidite') ?> %</p>
+                    </div>
                 </div>
             <?php endif; ?>
         </div>

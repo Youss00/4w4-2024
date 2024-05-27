@@ -17,21 +17,21 @@
 <!-- Pour les categories les plus populaires -->
 <div id="accueil" class="global">
     <section class="accueil__section">
-        <h2>Accueil</h2>
+        <h2>Destination populaire</h2>
         <div class="categorie__cours">
+
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
+
+                    $ma_categorie = "carte";
+                    if (in_category('galerie')) {
+                        $ma_categorie = "galerie";
+                    }
+
+                    get_template_part('gabarit/categorie', $ma_categorie);
+
             ?>
-                    <div class="carte">
-                        <?php has_post_thumbnail('thumbnail') ?>
-                        <?php the_category() ?>
-                        <h4><?php the_title(); ?></h4>
-                        <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
-                        <p><a href="<?php echo get_permalink() ?>">La suite</a></p>
-
-
-                    </div>
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
@@ -39,9 +39,8 @@
 </div>
 <div id="galerie" class="global diagonal">
     <section class="galerie__section">
-        <h2>Galerie (h2)</h2>
-        <p>Lorem ipsum dolor sit amet,<a href="#">Lorem, ipsum.</a> consectetur adipisicing elit. Minima <a href="#">Lorem, ipsum.</a> velit qui unde odit quae, magni labore maiores facilis obcaecati dolore, ullam facere. Ducimus veniam reprehenderit, temporibus ab at possimus fugit?</p>
-        <blockquote>Galerie ipsum, dolor sit amet consectetur adipisicing elit. Accusantium a, repellat alias qui ut in ratione optio quia quae minus repudiandae ducimus aliquid aperiam unde atque tempore non. Non, magnam.</blockquote>
+        <!-- <button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button> -->
+        <?php echo do_shortcode('[ys_destination]') ?>
     </section>
 </div>
 <!-- Pour les categorie dans le menu -->
@@ -54,9 +53,12 @@
             foreach ($categories as $categorie) : ?>
                 <div class="carte">
                     <h4><?php echo $categorie->name; ?></h3>
+                        <p><?php echo $categorie->cat_ID; ?></p>
                         <p><?= wp_trim_words($categorie->description, 10, "..."); ?></p>
                         <p>Nombres d'article: <?= $categorie->count; ?></p>
+
                         <a href="<?= get_category_link($categorie->term_id); ?>">Voir la suite de catégorie</a>
+
                 </div>
             <?php endforeach; ?>
 
