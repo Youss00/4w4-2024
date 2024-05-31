@@ -556,6 +556,13 @@ body {
   color: rgb(18, 51, 95);
 }
 
+.attachment-thumbnail {
+  border-radius: 10px;
+  height: auto;
+  width: 14rem;
+  border: 3px solid #fff;
+}
+
 .erreur-page {
   display: flex;
   justify-content: space-between;
