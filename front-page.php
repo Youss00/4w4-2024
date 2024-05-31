@@ -42,6 +42,7 @@
     <section class="galerie__section">
         <!-- <button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button><button class="bouton_categorie"></button> -->
         <?php echo do_shortcode('[ys_destination]') ?>
+
     </section>
 </div>
 <!-- Pour les categorie dans le menu -->

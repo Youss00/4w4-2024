@@ -556,11 +556,60 @@ body {
   color: rgb(18, 51, 95);
 }
 
+.infos-ville {
+  background-color: rgba(249, 249, 249, 0.431372549);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  padding: 10px 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infos-ville:hover {
+  transform: scale(1.05);
+  background-color: rgba(233, 233, 233, 0.0901960784);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.infos-ville h4 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.infos-ville p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #a3d6d6;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.infos-ville p span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
 .attachment-thumbnail {
   border-radius: 10px;
   height: auto;
   width: 14rem;
   border: 3px solid #fff;
+}
+
+.wp-block-image {
+  border-radius: 10px;
+  border: 3px solid #fff;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.wp-block-image:hover {
+  transform: scale(1.05);
 }
 
 .erreur-page {
@@ -777,14 +826,28 @@ body {
 
 #menu-footer {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+  #menu-footer {
+    flex-direction: row;
+  }
 }
 
 .description {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   gap: 3rem;
+}
+@media screen and (min-width: 900px) {
+  .description {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .information-perso,
@@ -795,12 +858,18 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 5rem;
-  width: 50%;
+  height: 100%;
   border: 1px solid #fff;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.165);
   /* Adding transition */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+@media screen and (min-width: 900px) {
+  .information-perso,
+  .desc-tp {
+    width: 50%;
+  }
 }
 
 .information-perso:hover,
