@@ -34,8 +34,26 @@
             <!-- Prendre le menu dans le wordpress et en faire un menu footer -->
             <?php wp_nav_menu(array("menu" => "footer", "container" => "nav")) ?>
         </div>
-        <?php wp_footer(); ?>
-    </footer>
+        <div class="description">
+            <div class="information-perso">
+                <h3>Collège De Maisonneuve</h3>
+                <p>3800, rue Sherbrooke Est</p>
+                <p>Montréal, Québec</p>
+                <p>H1X 2A2</p>
+                <p>514 254-7131</p>
+            </div>
+            <div class="desc-tp">
+                <h3>Description du TP</h3>
+                <h5>Youssra Seghier</h5>
+                <p>
+                    Le TP2 a pour objectif d'améliorer notre site de voyage en intégrant un carrousel d'images, des champs personnalisés pour les descriptions des destinations, des filtres utilisant la REST API de WordPress, des animations interactives et de nouveaux gabarits pour une organisation efficace du contenu.</p>
+            </div>
+        </div>
+
+
+</div>
+<?php wp_footer(); ?>
+</footer>
 </div>
 </body>
 

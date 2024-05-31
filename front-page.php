@@ -18,6 +18,7 @@
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Destination populaire</h2>
+
         <div class="categorie__cours">
 
             <?php

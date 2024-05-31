@@ -2,7 +2,7 @@
 
 <div id="accueil" class="global">
     <section class="accueil__section">
-        <h2>Accueil</h2>
+        <h2>Destinations</h2>
         <div class="section__cours">
             <?php
             if (have_posts()) :

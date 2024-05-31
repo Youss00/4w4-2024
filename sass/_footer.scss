@@ -9,3 +9,38 @@
 #menu-footer {
     display: flex;
 }
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+}
+
+.information-perso,
+.desc-tp {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5rem;
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.165);
+
+    /* Adding transition */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.information-perso:hover,
+.desc-tp:hover {
+    transform: translateY(-10px);
+    /* Slightly move the element up */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Change background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: theme-gr2
+Theme Name: tp2
 Theme URI: https://referenced.ca
 Author: Youssra Seghier
 Author URI: https://wordpress.org/
@@ -772,6 +772,40 @@ body {
   display: flex;
 }
 
+.description {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.information-perso,
+.desc-tp {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5rem;
+  width: 50%;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.165);
+  /* Adding transition */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.information-perso:hover,
+.desc-tp:hover {
+  transform: translateY(-10px);
+  /* Slightly move the element up */
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Change background color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
+}
+
 /* ////////////////////////////////////////// */
 /* composants                             */
 /* ////////////////////////////////////////// */
@@ -788,17 +822,43 @@ body {
 .recherche {
   display: flex;
   border: 1px solid #aaa;
+  border-radius: 5px;
+  overflow: hidden;
   justify-content: center;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .recherche__input {
   display: block;
-  color: red;
+  color: #b50000;
   background-color: beige;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  flex-grow: 1;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recherche__input:focus {
+  background-color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .recherche__button {
   background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.recherche__button:hover {
+  background-color: darkred;
 }
 
 .section__cours {
