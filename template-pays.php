@@ -15,13 +15,14 @@ get_header(); ?>
         <?php endif; ?>
 
     </section>
-    <?php get_template_part("gabarit/vagues") ?>
 </div>
+<?php get_template_part("gabarit/vagues") ?>
+<div id="galerie" class="api">
 
-<div id="galerie" class="global diagonal">
     <section class="galerie__section">
         <?php echo do_shortcode('[wtp_country_menu]'); ?>
     </section>
+    <?php get_template_part("gabarit/vagues") ?>
 </div>
 <?php
 get_footer();
