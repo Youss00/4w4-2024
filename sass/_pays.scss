@@ -13,7 +13,12 @@
     display: flex;
     justify-content: center;
     // min-height: 30vh;
-    background-color: rgb(6, 13, 30)
+    background-color: rgb(6, 13, 30);
+
+    .remplissage {
+        background-color: var(--_couleur-arriere-footer);
+
+    }
 }
 
 .globale>section,
@@ -28,8 +33,4 @@
     text-align: center;
     // background-color : rgba(#000, .05 );
     padding: 10rem 10rem;
-}
-
-.remplissage {
-    background-color: hsl(200, 83%, 16%);
 }

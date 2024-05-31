@@ -733,16 +733,15 @@ body {
   justify-content: center;
   background-color: rgb(6, 13, 30);
 }
+.globale .remplissage {
+  background-color: var(--_couleur-arriere-footer);
+}
 
 .globale > section,
 .globale > footer {
   flex: 0 1 1500px;
   text-align: center;
   padding: 10rem 10rem;
-}
-
-.remplissage {
-  background-color: hsl(200, 83%, 16%);
 }
 
 .vague {
