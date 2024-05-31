@@ -556,16 +556,6 @@ body {
   color: rgb(18, 51, 95);
 }
 
-.api {
-  display: flex;
-  justify-content: center;
-  flex: 0 1 1300px;
-  position: relative;
-  padding: 10rem 10rem;
-  align-items: center;
-  text-align: center;
-}
-
 .infos-ville {
   background-color: rgba(249, 249, 249, 0.431372549);
   border-radius: 8px;
@@ -728,6 +718,33 @@ body {
     padding: 1.5rem;
   }
 }
+.api {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 1300px;
+  position: relative;
+  padding: 10rem 10rem;
+  align-items: center;
+  text-align: center;
+}
+
+.globale {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(6, 13, 30);
+}
+
+.globale > section,
+.globale > footer {
+  flex: 0 1 1500px;
+  text-align: center;
+  padding: 10rem 10rem;
+}
+
+.remplissage {
+  background-color: hsl(200, 83%, 16%);
+}
+
 .vague {
   position: absolute;
   bottom: -2px;

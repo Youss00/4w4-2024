@@ -1,0 +1,35 @@
+.api {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 1300px;
+    // min-height: 50vh;
+    position: relative;
+    padding: 10rem 10rem;
+    align-items: center;
+    text-align: center;
+}
+
+.globale {
+    display: flex;
+    justify-content: center;
+    // min-height: 30vh;
+    background-color: rgb(6, 13, 30)
+}
+
+.globale>section,
+// .global>header,
+.globale>footer // .global>.entete__menu 
+
+
+    {
+    // flex : grow shrink basis
+    flex: 0 1 1500px;
+    // border : 1px solid #aaa;
+    text-align: center;
+    // background-color : rgba(#000, .05 );
+    padding: 10rem 10rem;
+}
+
+.remplissage {
+    background-color: hsl(200, 83%, 16%);
+}
