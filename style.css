@@ -184,8 +184,8 @@ definition des variable de couleurs pour la palette de couleurs*/
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
-  --couleur-arriere-accueil: hsl(199.75deg 80.1% 39.41%);
-  --couleur-arriere-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
+  --couleur-arriere-accueil: hsl(200, 80%, 61%);
+  --couleur-arriere-galerie: hsl(189, 71%, 54%);
   --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 70%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 }
@@ -221,7 +221,7 @@ definition des variable de couleurs pour la palette de couleurs*/
 }
 
 #galerie {
-  --_couleur-arriere: hsl(200, 68%, 42%);
+  --_couleur-arriere: hsl(200, 65%, 49%);
   --_couleur: hsl(190, 100%, 25%);
   /* Couleur des liens */
   --_couleur-lien: hsl(var(--hu2), var(--s-couleur-arriere), 40%);
@@ -747,7 +747,7 @@ body {
 }
 
 .remplissage {
-  fill: var(--_couleur-arriere-galerie);
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonal {
