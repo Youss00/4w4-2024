@@ -39,7 +39,7 @@
                 <a href="https://github.com/Youss00/4w4-2024/tree/tp2">GitHub TP2</a>
             </div>
         </div>
-
+        <div>&copy;TIM 2024 || Conception d'interface Web || Youssra Seghier</div>
 
 </div>
 <?php wp_footer(); ?>
