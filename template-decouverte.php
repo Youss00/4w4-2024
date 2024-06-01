@@ -10,8 +10,8 @@ get_header(); ?>
     if (have_posts()) : the_post(); ?>
         <h1><?= get_the_title(); ?></h1>
         <?php the_content(); ?>
-        <p>L'adresse de l'evénement<?php the_field('adresse'); ?></p>
-        <p>La date et l'heure de l'événement<?php the_field('date_et_heure_de_levenement'); ?></p>
+        <h5>Pour découvrir les nouvelles destinations, incrivez-vous à notre infolettre pour avoir toutes les nouvelles destinations sans chercher loins</h5>
+
     <?php endif; ?>
     <div class="inscription">
         <form action="/submit_registration" method="post">
