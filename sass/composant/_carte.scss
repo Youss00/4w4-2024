@@ -24,11 +24,12 @@
     background-color: hsl(237.89deg 100% 11.18%);
     border: 10px double white;
     border-radius: 25px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .carte:hover {
     background-color: hsl(214, 77%, 24%);
-    border: 12px double rgb(127, 240, 255);
+    transform: scale(1.05);
 
 }
 
