@@ -712,7 +712,7 @@ body {
 }
 
 #galerie {
-  background-color: var(--couleur-arriere-accueil);
+  background-color: rgb(82, 181, 226);
   color: var(--_couleur);
   z-index: 1;
 }
@@ -868,6 +868,32 @@ body {
   z-index: -1;
   transform: skewY(-5deg);
   background-color: var(--couleur-arriere-galerie);
+}
+
+.api {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 1300px;
+  position: relative;
+  padding: 10rem 10rem;
+  align-items: center;
+  text-align: center;
+}
+
+.globale {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(6, 13, 30);
+}
+.globale .remplissage {
+  background-color: var(--_couleur-arriere-footer);
+}
+
+.globale > section,
+.globale > footer {
+  flex: 0 1 1500px;
+  text-align: center;
+  padding: 10rem 10rem;
 }
 
 #entete {
