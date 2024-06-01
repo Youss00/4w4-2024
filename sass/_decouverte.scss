@@ -59,3 +59,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.fiche-inscription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+}
