@@ -718,6 +718,58 @@ body {
     padding: 1.5rem;
   }
 }
+.site__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 115, 192);
+}
+
+.site__main > section,
+.site__main > footer {
+  flex: 0 1 1500px;
+  text-align: center;
+  padding: 10rem 10rem;
+}
+
+.inscription {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.431372549);
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+
+.inscription .form-group {
+  margin-bottom: 15px;
+}
+
+.inscription label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inscription input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.inscription button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(47, 115, 192);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .vague {
   position: absolute;
   bottom: -2px;
