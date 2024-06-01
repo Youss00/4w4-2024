@@ -9,7 +9,19 @@
             <h2 class="bgc-text"><?php echo get_bloginfo('description') ?></h2>
             <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
         </div>
-        <div class="entete__header__button"><button class="entete__button">Découverte</button></div>
+        <div class="entete__header__button">
+            <?php
+            // Obtenez l'ID de la page par son chemin
+            $page = get_page_by_path('decouverte');
+
+            // Vérifiez si la page existe
+            if ($page) {
+                // Obtenez l'URL de la page
+                $url = get_permalink($page->ID);
+            }
+            ?>
+            <a href="<?php echo $url; ?>"> <button class="entete__button">Découverte</button></a>
+        </div>
 
     </section>
     <?php get_template_part("gabarit/vagues") ?>
