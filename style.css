@@ -783,9 +783,14 @@ body {
 
 .fiche-inscription {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 4rem;
+}
+@media screen and (min-width: 700px) {
+  .fiche-inscription {
+    flex-direction: row;
+  }
 }
 
 @keyframes grow {
