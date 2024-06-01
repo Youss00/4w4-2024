@@ -606,6 +606,29 @@ body {
   border: 3px solid #fff;
   transform: scale(1);
   transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-color: hsl(0, 0%, 100%);
+}
+.wp-block-image::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.281);
+  transform: rotate(30deg);
+  pointer-events: none;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+.wp-block-image:hover {
+  border-color: hsla(0, 0%, 100%, 0.5);
+}
+.wp-block-image:hover::before {
+  transform: rotate(160deg) translateX(100%);
+  opacity: 1;
 }
 
 .wp-block-image:hover {
