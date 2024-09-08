@@ -1,76 +1,260 @@
-*, 
+*,
 *::before,
 *::after {
     box-sizing: border-box;
 
 }
 
-*{
-    margin:0;
-    padding:0;
+::selection {
+    background-color: rgba(255, 255, 255, 0.514);
+    color: rgb(255, 112, 112);
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    font-family: "prompt", Arial, Helvetica, sans-serif;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.bouton-carte {
+    border: none;
+    background-color: rgba(6, 13, 30, 0);
+    color: rgb(96, 218, 255);
+}
+
+.bouton-retour {
+    padding: 1rem;
+    border: none;
+    font-size: 2rem;
+    border: 1rem double rgb(4, 5, 49);
+    background-color: rgba(6, 13, 30, 0);
+    background-color: rgb(82, 215, 255);
+    color: rgb(18, 51, 95);
+
+}
+
+// dans la page single, c est les information des champs personnalisées
+.infos-ville {
+    background-color: rgba(249, 249, 249, 0.431372549);
+    border-radius: 8px;
+    border: 1px solid #fff;
+    padding: 10px 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+.infos-ville:hover {
+    transform: scale(1.05);
+    background-color: #e9e9e917;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.infos-ville h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.infos-ville p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #a3d6d6;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.infos-ville p span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.attachment-thumbnail {
+    border-radius: 10px;
+    height: auto;
+    width: 14rem;
+    border: 3px solid #fff;
+}
+
+.wp-block-image {
+    border-radius: 10px;
+    border: 3px solid #fff;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-color: hsl(0, 0%, 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.281);
+        transform: rotate(30deg);
+        pointer-events: none;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+    }
+
+    &:hover {
+        border-color: hsl(0, 0%, 100%, 0.5);
+
+        &::before {
+            transform: rotate(160deg) translateX(100%);
+            opacity: 1;
+        }
+    }
+}
+
+.wp-block-image:hover {
+    transform: scale(1.05);
+}
+
+.erreur-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-erreur {
+    display: none;
+
+    @media screen and (min-width: 700px) {
+        display: block;
+
+    }
+}
+
+.search-accueil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+
+
+}
+
+.categories-accueil {
+    display: none;
+
+    @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+    }
+
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 700px) {
+        justify-content: flex-start;
+        align-items: baseline;
+
+    }
+
 }
 
 .global {
-    display:flex;
+    display: flex;
     justify-content: center;
-    min-height: 30vh;
+    // min-height: 30vh;
+    background-color: rgb(6, 13, 30)
 }
 
-.global > section,
-.global > header,
-.global > footer{
+.global>section,
+// .global>header,
+.global>footer // .global>.entete__menu 
+
+
+    {
     // flex : grow shrink basis
-    flex : 0 1 1100px;
+    flex: 0 1 1500px;
     // border : 1px solid #aaa;
+    text-align: center;
     // background-color : rgba(#000, .05 );
-    padding : 10rem 1rem;
+    padding: 10rem 10rem;
 }
 
-.global > header {
-  flex : 0 1 1500px;
-  padding: 3rem 0 0 0 ;
-   min-height: 50vh;
-   position : relative;
+
+
+
+
+.entete__header {
+    flex: 0 1 1500px;
+    // min-height: 50vh;
+    position: relative;
+    padding: 1.5rem;
 
 }
 
 
 
 #entete {
-     background-color: var(--_couleur-arriere);
- 
-     //  background-image: url("images/github.png");
-     //  background-repeat: no-repeat;
-    color : var(--_couleur);
-    position : relative;
-    min-height: 100vh;
+    background-color: var(--_couleur-arriere);
+
+    //  background-image: url("images/github.png");
+    //  background-repeat: no-repeat;
+    color: var(--_couleur);
+    position: relative;
+    // min-height: 100vh;
 
 }
+
 #accueil {
     background-color: var(--_couleur-arriere);
-    color : var(--_couleur);
+    color: var(--_couleur);
 }
+
 #galerie {
-    background-color: var(--couleur-arriere-accueil);
-    color : var(--_couleur);
+    background-color: rgb(82, 181, 226);
+    color: var(--_couleur);
     z-index: 1;
-    background: linear-gradient(
-            180deg, 
-            var(--couleur-arriere-accueil) 50%,
-            var(--couleur-arriere-evenement) 50%);
+
 }
+
 #evenement {
     background-color: var(--_couleur-arriere);
-    color : var(--_couleur);
-    position : relative;
+    color: var(--_couleur);
+    position: relative;
 }
+
 #footer {
     background-color: var(--_couleur-arriere);
-    color : var(--_couleur);
+    color: var(--_couleur);
+}
+
+@media screen and (min-width: 700px) {
+    .global>header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .entete__menu {
+        flex: 0 1 1500px;
+        // min-height: 50vh;
+        position: relative;
+        padding: 1.5rem;
+    }
 }

@@ -1,0 +1,39 @@
+@use "sass:list";
+
+@each $nom,
+$couleurs in $defaut {
+
+    @each $valeur,
+    $couleur in $couleurs {
+        .clr-#{$nom}-#{$valeur} {
+            color : #{$couleur};
+
+        }
+
+        .bck-#{$nom}-#{$valeur} {
+
+            background-color: #{$couleur};
+        }
+    }
+}
+
+// definir la regle de style a partir d une couleur de tecte $clr et une ou plusieur en background  $bck.
+@mixin couleur-agencement($clr, $bck) {
+    color: $clr;
+
+    @if(list.length($bck)==1) {
+        background-color: $bck;
+    }
+
+    @else {
+        background-image: linear-gradient(90deg, $bck);
+    }
+}
+
+// creation 
+@each $valeur,
+$clr in $agencement-couleur {
+    .clr-agencement-#{$valeur} {
+        @include couleur-agencement($clr...);
+    }
+}

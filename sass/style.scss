@@ -1,7 +1,7 @@
 /*
-Theme Name: theme-gr2
+Theme Name: tp2
 Theme URI: https://referenced.ca
-Author: Eddy Martin
+Author: Youssra Seghier
 Author URI: https://wordpress.org/
 Description: Thème de base développé dans le cours 4W4
 Version: 1.0
@@ -18,8 +18,10 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* Variables css                              */
 /* ////////////////////////////////////////// */
-@import "variables";
 
+@import "utile/local";
+@import "couleur";
+@import "utile/couleur-class";
 /* ////////////////////////////////////////// */
 /* règles de base                             */
 /* ////////////////////////////////////////// */
@@ -30,11 +32,12 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* règles de la pagination                             */
 /* ////////////////////////////////////////// */
 @import "layout";
+@import "decouverte";
 
 @import "effet/vague";
 
 @import "effet/diagonal";
-
+@import "pays";
 @import "entete";
 @import "footer";
 
@@ -44,4 +47,4 @@ Ce thème a été développé dans le cadre du cours 4W4
 @import "composant/sociaux";
 @import "composant/recherche";
 @import "composant/carte";
-
+@import "composant/menu";

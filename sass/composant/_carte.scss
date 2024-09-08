@@ -1,17 +1,78 @@
-
-
 .section__cours {
     display: flex;
     flex-wrap: wrap;
-    gap : 1rem;
+    gap: 1rem;
+    position: relative;
+    top: 5rem;
+}
+
+.categorie__cours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    top: 5rem;
 }
 
 .carte {
-    //border : 1px solid #aaa;
-    padding : 1rem;
+    /* autres styles */
+    border: 1px solid black;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex : 0 1 23%;
-    background-color: hsl(var(--hu1),var(--s-couleur-arriere),  75%);
+    flex: 1 0 25%;
+    background-color: hsl(237.89deg 100% 11.18%);
+    border: 10px double white;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.247);
+        transform: rotate(30deg);
+        pointer-events: none;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+    }
+
+    &:hover::before {
+        transform: rotate(30deg) translateX(100%);
+        opacity: 1;
+    }
+}
+
+.carte:hover {
+    background-color: hsl(238, 52%, 21%);
+    border: 10px double hsl(219, 49%, 70%);
+    transform: scale(1.05);
+}
+
+.carte * {
+    text-align: center;
+
+}
+
+.post-categories {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte p {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.carte h3 {
+    text-align: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
 }
